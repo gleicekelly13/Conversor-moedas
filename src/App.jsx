@@ -2,11 +2,12 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import ConversorMoeda from './components/ConversorMoeda'
 
 function App() {
   return (
     <>
-      <h1>Conversor de moedas</h1>
+      <ConversorMoeda/>
     </>
   )
 }

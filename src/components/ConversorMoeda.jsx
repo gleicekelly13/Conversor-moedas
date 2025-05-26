@@ -6,6 +6,29 @@ function ConversorMoeda() {
     const [moedaDestino, setMoedaDestino] = useState ('BRL');
     const [resultado, setResultado] = useState(null);
 
+    const converterMoeda = async () => {
+        if (!valor || isNaN(valor)) {
+            alert ('Por favor, insira um valor válido.');
+            return;
+        }
+
+        try {
+            const url = `https://economia.awesomeapi.com.br/json/last/${moedaOrigem}-${moedaDestino}`;
+            const resposta = await fetch(url);
+            const dados = await resposta.json();
+
+            const par = `${moedaOrigem}${moedaDestino}`;
+            const taxa = parseFloat(dados[par].bid);
+
+            const valorConvertido = (parseFloat(valor) * taxa).toFixed(2);
+            setResultado(valorConvertido);
+        } catch (error) {
+            alert ('Erro ao converter moeda. Tente novamente mais tarde.');
+            console.error(error);
+        }
+    }
+
+    
     return (
         <div>
             <h1>Conversor de Moedas</h1>
@@ -36,7 +59,7 @@ function ConversorMoeda() {
                     <option value="ARS">Peso argentino (ARS)</option>
                 </select>
 
-                <button>Converter</button>
+                <button onClick={converterMoeda}>Converter</button>
             </div>
 
             {/* Mostrar o valor convertido */}

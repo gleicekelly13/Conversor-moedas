@@ -12,6 +12,12 @@ function ConversorMoeda() {
             return;
         }
 
+        {/* Condicional caso o usuário tentar converter a mesma moeda */}
+        if (moedaOrigem === moedaDestino) {
+            alert ('Escolha moedas diferentes para conversão.');
+            return;
+        }
+
         try {
             const url = `https://economia.awesomeapi.com.br/json/last/${moedaOrigem}-${moedaDestino}`;
             const resposta = await fetch(url);

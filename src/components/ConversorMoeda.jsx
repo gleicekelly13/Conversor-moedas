@@ -21,6 +21,12 @@ function ConversorMoeda() {
         try {
             const url = `https://economia.awesomeapi.com.br/json/last/${moedaOrigem}-${moedaDestino}`;
             const resposta = await fetch(url);
+
+            {/* Verifica se a resposta foi bem-sucedida (status HTTP 200-299) */}
+            if (!resposta.ok) {
+                throw new Error (`Erro na requisição: ${resposta.status}`);
+            }
+
             const dados = await resposta.json();
 
             const par = `${moedaOrigem}${moedaDestino}`;

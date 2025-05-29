@@ -30,6 +30,12 @@ function ConversorMoeda() {
             const dados = await resposta.json();
 
             const par = `${moedaOrigem}${moedaDestino}`;
+
+            {/* Verifica se o par existe nos dados retornados */}
+            if (!dados[par] || !dados[par].bid) {
+                throw new Error ("Par de moedas inválido ou não disponível na API.");
+            }
+            
             const taxa = parseFloat(dados[par].bid);
 
             const valorConvertido = (parseFloat(valor) * taxa).toFixed(2);

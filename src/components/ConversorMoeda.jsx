@@ -38,6 +38,11 @@ function ConversorMoeda() {
             
             const taxa = parseFloat(dados[par].bid);
 
+            {/* Verifica se a taxa é um número válido */}
+            if (isNaN(taxa)) {
+                throw new Error ("Taxa de câmbio inválida.");
+            }
+
             const valorConvertido = (parseFloat(valor) * taxa).toFixed(2);
             setResultado(valorConvertido);
         } catch (error) {

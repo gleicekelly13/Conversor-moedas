@@ -46,8 +46,8 @@ function ConversorMoeda() {
             const valorConvertido = (parseFloat(valor) * taxa).toFixed(2);
             setResultado(valorConvertido);
         } catch (error) {
-            alert ('Erro ao converter moeda. Tente novamente mais tarde.');
-            console.error(error);
+            alert ('Erro ao converter moeda. Tente novamente mais tarde.');{/* Mensagem amigável de erro */}
+            console.error("Detalhes do erro: ", error); {/* Exibe detalhes técnicos no console para debug */}
         }
     }
 

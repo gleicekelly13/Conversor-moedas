@@ -18,9 +18,9 @@ function ConversorMoeda() {
             return;
         }
 
-        try {
+        try {  {/* Monta a URL da API com a moeda de origem e destino */}
             const url = `https://economia.awesomeapi.com.br/json/last/${moedaOrigem}-${moedaDestino}`;
-            const resposta = await fetch(url);
+            const resposta = await fetch(url);  {/* Faz uma requisição HTTP GET para buscar os dados de câmbio */}
 
             {/* Verifica se a resposta foi bem-sucedida (status HTTP 200-299) */}
             if (!resposta.ok) {

@@ -27,6 +27,7 @@ function ConversorMoeda() {
                 throw new Error (`Erro na requisição: ${resposta.status}`);
             }
 
+            {/* Converte a resposta para json */}
             const dados = await resposta.json();
 
             const par = `${moedaOrigem}${moedaDestino}`;

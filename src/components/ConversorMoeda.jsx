@@ -56,9 +56,9 @@ function ConversorMoeda() {
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-100">
             <div className="flex flex-col gap-5 bg-white p-8 rounded-lg shadow-lg">
-                <h1 className="text-center text-2xl font-medium text-emerald-950 mb-5">Conversor de Moedas</h1>
+                <h1 className="text-center text-2xl font-medium text-emerald-950">Conversor de Moedas</h1>
 
-                <div>
+                <div className="flex flex-col gap-4 mt-6">
                     <input 
                         type="number"
                         value={valor}  /* Mostra o que está no estado `valor`. */

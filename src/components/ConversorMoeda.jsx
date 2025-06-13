@@ -63,7 +63,8 @@ function ConversorMoeda() {
                         type="number"
                         value={valor}  /* Mostra o que está no estado `valor`. */
                         onChange={(e) => setValor(e.target.value)} /* Atualiza o estado `valor` quando o usuário digita. */
-                        placeholder="Valor" 
+                        placeholder="Digite o valor" 
+                        className="p-3 border rounded-md border-gray-300 shadow-sm focus:outline-none focus:right-2 focus:ring-blue-500 focus:border-transparent"
                     />
 
                     {/* Moeda que o usuário escolheu como origem */}

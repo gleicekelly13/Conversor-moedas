@@ -93,7 +93,12 @@ function ConversorMoeda() {
                         <option value="ARS">Peso argentino (ARS)</option>
                     </select>
 
-                    <button onClick={converterMoeda}>Converter</button>
+                    <button 
+                        onClick={converterMoeda}
+                        className="bg-blue-500 text-white font-semibold py-3 rounded-md hover:bg-blue-600 transition"
+                    >
+                        Converter
+                    </button>
                 </div>
 
                 {/* Mostrar o valor convertido */}

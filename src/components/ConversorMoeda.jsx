@@ -102,7 +102,9 @@ function ConversorMoeda() {
                 </div>
 
                 {/* Mostrar o valor convertido */}
-                <p>{resultado ? `Resultado: ${resultado}` : 'Resultado...'}</p>
+                <p className={`text-center text-xl font-semibold mt-2 transition ${resultado ? 'text-emerald-900' : 'text-gray-500'}`}>
+                    {resultado ? `Resultado: ${resultado}` : 'Resultado...'}
+                </p>
             </div>
         </div>
     )

@@ -95,7 +95,7 @@ function ConversorMoeda() {
 
                     <button 
                         onClick={converterMoeda}
-                        className="bg-blue-500 text-white font-semibold py-3 rounded-md hover:bg-blue-600 transition"
+                        className="bg-emerald-900 text-white font-semibold py-3 rounded-md hover:bg-emerald-950 transition"
                     >
                         Converter
                     </button>

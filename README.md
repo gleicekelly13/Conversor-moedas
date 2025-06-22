@@ -1,3 +1,10 @@
+<h1 align="center">Conversor de moedas</h1>
+<h2 align="center">:page_facing_up: Descrição do projeto</h2>
+<p>Aplicativo simples e moderno de conversão de moedas, desenvolvido com React e estilizado com Tailwind CSS</p>
+<br>
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

@@ -1,6 +1,6 @@
 <h1 align="center">Conversor de moedas</h1>
 <h2 align="center">:page_facing_up: Descrição do projeto</h2>
-<p>Aplicativo simples e moderno de conversão de moedas, desenvolvido com React e estilizado com Tailwind CSS</p>
+<p>Aplicativo simples e moderno de conversão de moedas, desenvolvido com React e estilizado com Tailwind CSS. Permite ao usuário inserir um valor, selecionar a moeda de origem e destino, e visualizar instantaneamente o valor convertido utilizando a API da AwesomeAPI para obter as taxas de câmbio em tempo real.</p>
 <br>
 
 

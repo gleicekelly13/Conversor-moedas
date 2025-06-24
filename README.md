@@ -3,7 +3,13 @@
 <p>Aplicativo simples e moderno de conversão de moedas, desenvolvido com React e estilizado com Tailwind CSS. Permite ao usuário inserir um valor, selecionar a moeda de origem e destino, e visualizar instantaneamente o valor convertido utilizando a API da AwesomeAPI para obter as taxas de câmbio em tempo real.</p>
 <br>
 
-
+<h2 align="center"> :computer: Tecnologias utilizadas </h2>
+<ul>
+  <li>HTML5</li>
+  <li>Tailwind CSS</li>
+  <li>JavaScript</li>
+  <li>React JS</li>
+</ul>
 
 # React + Vite
 

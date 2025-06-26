@@ -55,6 +55,13 @@ function ConversorMoeda() {
     
     return (
         <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-emerald-100  to-gray-200">
+
+            <button 
+                className="self-start mt-5 p-2 bg-gray-200 dark:bg-gray-700 text-sm rounded hover:opacity-80 transition"
+            >
+                Dark model
+            </button>
+
             <div className="flex flex-col gap-5 bg-white p-8 rounded-lg shadow-lg">
                 <h1 className="text-center text-2xl font-medium text-emerald-950">Conversor de Moedas</h1>
 

@@ -55,63 +55,64 @@ function ConversorMoeda() {
     
     return (
         <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-emerald-100  to-gray-200">
+            <div className="flex flex-col items-end gap-5">
+                <button 
+                    className="px-4 py-2 bg-gray-200 dark:bg-gray-700 text-sm rounded hover:opacity-80 transition"
+                >
+                    Dark model
+                </button>
 
-            <button 
-                className="self-start mt-5 p-2 bg-gray-200 dark:bg-gray-700 text-sm rounded hover:opacity-80 transition"
-            >
-                Dark model
-            </button>
+                <div className="flex flex-col gap-5 bg-white p-8 rounded-lg shadow-lg">
+                    <h1 className="text-center text-2xl font-medium text-emerald-950">Conversor de Moedas</h1>
 
-            <div className="flex flex-col gap-5 bg-white p-8 rounded-lg shadow-lg">
-                <h1 className="text-center text-2xl font-medium text-emerald-950">Conversor de Moedas</h1>
+                    <div className="flex flex-col gap-4 mt-6">
+                        <input 
+                            type="number"
+                            value={valor}  /* Mostra o que está no estado `valor`. */
+                            onChange={(e) => setValor(e.target.value)} /* Atualiza o estado `valor` quando o usuário digita. */
+                            placeholder="Digite o valor" 
+                            className="p-3 border rounded-md border-gray-300 shadow-sm focus:outline-none focus:ring-2  focus:ring-green-900 focus:border-transparent transition"
+                        />
 
-                <div className="flex flex-col gap-4 mt-6">
-                    <input 
-                        type="number"
-                        value={valor}  /* Mostra o que está no estado `valor`. */
-                        onChange={(e) => setValor(e.target.value)} /* Atualiza o estado `valor` quando o usuário digita. */
-                        placeholder="Digite o valor" 
-                        className="p-3 border rounded-md border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-900 focus:border-transparent transition"
-                    />
+                        {/* Moeda que o usuário escolheu como origem */}
+                        <select 
+                            value={moedaOrigem}    
+                            onChange={(e) => setMoedaOrigem(e.target.value)}
+                        className="p-3 border rounded-md border-gray-300 shadow-sm focus:outline-none focus:ring-2  focus:ring-green-900 focus:border-transparent transition"
+                        >
+                            <option value="USD">Dólar (USD)</option>
+                            <option value="BRL">Real (BRL)</option>
+                            <option value="EUR">Euro (EUR)</option>
+                            <option value="GBP">Libra esterlina (GBP)</option>
+                            <option value="ARS">Peso argentino (ARS)</option>
+                        </select>
 
-                    {/* Moeda que o usuário escolheu como origem */}
-                    <select 
-                        value={moedaOrigem}    
-                        onChange={(e) => setMoedaOrigem(e.target.value)}
-                        className="p-3 border rounded-md border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-900 focus:border-transparent transition"
-                    >
-                        <option value="USD">Dólar (USD)</option>
-                        <option value="BRL">Real (BRL)</option>
-                        <option value="EUR">Euro (EUR)</option>
-                        <option value="GBP">Libra esterlina (GBP)</option>
-                        <option value="ARS">Peso argentino (ARS)</option>
-                    </select>
+                        {/* Moeda de destino */}
+                        <select 
+                            value={moedaDestino} 
+                            onChange={(e) => setMoedaDestino(e.target.value)}
+                            className="p-3 border rounded-md border-gray-300 shadow-sm focus:outline-none focus:ring-2  focus:ring-green-900 focus:border-transparent transition"
+                        >
+                            <option value="USD">Dólar (USD)</option>
+                            <option value="BRL">Real (BRL)</option>
+                            <option value="EUR">Euro (EUR)</option>
+                            <option value="GBP">Libra esterlina (GBP)</option>
+                            <option value="ARS">Peso argentino (ARS)</option>
+                        </select>
 
-                    {/* Moeda de destino */}
-                    <select 
-                        value={moedaDestino} 
-                        onChange={(e) => setMoedaDestino(e.target.value)}
-                        className="p-3 border rounded-md border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-900 focus:border-transparent transition"
-                    >
-                        <option value="USD">Dólar (USD)</option>
-                        <option value="BRL">Real (BRL)</option>
-                        <option value="EUR">Euro (EUR)</option>
-                        <option value="GBP">Libra esterlina (GBP)</option>
-                        <option value="ARS">Peso argentino (ARS)</option>
-                    </select>
+                        <button 
+                            onClick={converterMoeda}
+                            className="bg-emerald-900 text-white font-semibold py-3 rounded-md hover:bg-emerald-950 transition"
+                        >
+                            Converter
+                        </button>
+                    </div>
 
-                    <button 
-                        onClick={converterMoeda}
-                        className="bg-emerald-900 text-white font-semibold py-3 rounded-md hover:bg-emerald-950 transition"
-                    >
-                        Converter
-                    </button>
+                    {/* Mostrar o valor convertido */}
+                    <p className={`text-center text-xl font-semibold mt-2 transition ${resultado ? 'text-emerald-900' :     'text-gray-500'}`}>
+                        {resultado ? `Resultado: ${resultado}` : 'Resultado...'}
+                    </p>
                 </div>
-
-                {/* Mostrar o valor convertido */}
-                <p className={`text-center text-xl font-semibold mt-2 transition ${resultado ? 'text-emerald-900' : 'text-gray-500'}`}>
-                    {resultado ? `Resultado: ${resultado}` : 'Resultado...'}
-                </p>
             </div>
         </div>
     )

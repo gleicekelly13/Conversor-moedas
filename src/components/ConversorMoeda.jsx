@@ -58,11 +58,12 @@ function ConversorMoeda() {
         <div className = {temaEscuro ? 'dark' : ''}>
             <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-emerald-100  to-gray-200">
                 <div className="flex flex-col items-end gap-5">
-                    
+
                     <button 
+                        onClick={() => setTemaEscuro(!temaEscuro)}
                         className="px-4 py-2 bg-gray-200 dark:bg-gray-700 text-sm rounded hover:opacity-80 transition"
                     >
-                        Dark model
+                        {temaEscuro ? 'Light' : 'Dark'}
                     </button>
 
                     <div className="flex flex-col gap-5 bg-white p-8 rounded-lg shadow-lg">

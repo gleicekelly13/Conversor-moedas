@@ -66,7 +66,7 @@ function ConversorMoeda() {
                         {temaEscuro ? 'Light' : 'Dark'}
                     </button>
 
-                    <div className="flex flex-col gap-5 bg-white p-8 rounded-lg shadow-lg">
+                    <div className="flex flex-col gap-5 bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg w-full max-w-md">
                         <h1 className="text-center text-2xl font-medium text-emerald-950">Conversor de Moedas</h1>
 
                         <div className="flex flex-col gap-4 mt-6">

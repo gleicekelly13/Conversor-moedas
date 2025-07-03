@@ -67,7 +67,14 @@ function ConversorMoeda() {
                     </button>
 
                     <div className="flex flex-col gap-5 bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg w-full max-w-md">
-                        <h1 className="text-center text-2xl font-medium text-emerald-950 dark:text-emerald-400">
+                        <h1 className="text-center text-2xl font-medium text-emerald-950  dark:text-white"
+                            style={ temaEscuro
+                              ?  {
+                                    textShadow:
+                                    '0 0 5px #34d399, 0 0 10px #34d399, 0 0 20px #34d399, 0 0 40px #10b981',
+                                }
+                              : {} }
+                        >
                             Conversor de Moedas
                         </h1>
 

@@ -84,14 +84,14 @@ function ConversorMoeda() {
                                 value={valor}  /* Mostra o que está no estado `valor`. */
                                 onChange={(e) => setValor(e.target.value)} /* Atualiza o estado `valor` quando o usuário digita. */
                                 placeholder="Digite o valor" 
-                                className="p-3 border rounded-md border-gray-300 shadow-sm focus:outline-none focus:ring-2      focus:ring-green-900 focus:border-transparent transition"
+                                className="p-3 border rounded-md border-gray-300 shadow-sm focus:outline-none focus:ring-2      focus:ring-green-900 focus:border-transparent transition dark:focus:ring-green-600"
                             />
 
                             {/* Moeda que o usuário escolheu como origem */}
                             <select 
                                 value={moedaOrigem}    
                                 onChange={(e) => setMoedaOrigem(e.target.value)}
-                            className="p-3 border rounded-md border-gray-300 shadow-sm focus:outline-none focus:ring-2      focus:ring-green-900 focus:border-transparent transition"
+                            className="p-3 border rounded-md border-gray-300 shadow-sm focus:outline-none focus:ring-2      focus:ring-green-900 focus:border-transparent transition dark:focus:ring-green-600"
                             >
                                 <option value="USD">Dólar (USD)</option>
                                 <option value="BRL">Real (BRL)</option>
@@ -104,7 +104,7 @@ function ConversorMoeda() {
                             <select 
                                 value={moedaDestino} 
                                 onChange={(e) => setMoedaDestino(e.target.value)}
-                                className="p-3 border rounded-md border-gray-300 shadow-sm focus:outline-none focus:ring-2      focus:ring-green-900 focus:border-transparent transition"
+                                className="p-3 border rounded-md border-gray-300 shadow-sm focus:outline-none focus:ring-2      focus:ring-green-900 focus:border-transparent transition dark:focus:ring-green-600"
                             >
                                 <option value="USD">Dólar (USD)</option>
                                 <option value="BRL">Real (BRL)</option>

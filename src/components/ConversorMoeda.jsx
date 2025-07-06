@@ -122,7 +122,7 @@ function ConversorMoeda() {
                         </div>
 
                         {/* Mostrar o valor convertido */}
-                        <p className={`text-center text-xl font-semibold mt-2 transition ${resultado ? 'text-emerald-900' :         'text-gray-500'}`}>
+                        <p className={`text-center text-xl font-semibold mt-2 transition ${resultado ? 'text-emerald-900 dark:text-emerald-400' :         'text-gray-500 dark:text-gray-300'}`}>
                             {resultado ? `Resultado: ${resultado}` : 'Resultado...'}
                         </p>
                     </div>

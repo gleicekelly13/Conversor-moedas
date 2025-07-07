@@ -56,7 +56,7 @@ function ConversorMoeda() {
     
     return (
         <div className = {temaEscuro ? 'dark' : ''}>
-            <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-emerald-100  to-gray-200">
+            <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-emerald-100  to-gray-200 dark:from-slate-500 dark:to-slate-900">
                 <div className="flex flex-col items-end gap-5">
 
                     <button 

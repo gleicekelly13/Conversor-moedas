@@ -1,4 +1,6 @@
 import { useState } from "react";
+import sunIcon from "../assets/sun.png"
+import moonIcon from "../assets/moon.png"
 
 function ConversorMoeda() {
     const [valor, setValor] = useState('');
@@ -63,6 +65,10 @@ function ConversorMoeda() {
                         onClick={() => setTemaEscuro(!temaEscuro)}
                         className="px-4 py-2 bg-gray-200 dark:bg-gray-700 text-sm rounded hover:opacity-80 transition"
                     >
+                        <img 
+                            src={temaEscuro ? sunIcon : moonIcon}
+                            className="w-5 h-5"
+                        />
                         {temaEscuro ? 'Light' : 'Dark'}
                     </button>
 

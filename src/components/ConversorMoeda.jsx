@@ -63,7 +63,7 @@ function ConversorMoeda() {
 
                     <button 
                         onClick={() => setTemaEscuro(!temaEscuro)}
-                        className="px-4 py-2 bg-gray-200 dark:bg-gray-700 text-sm rounded hover:opacity-80 transition"
+                        className="flex px-4 py-2 gap-2 bg-slate-50 text-gray-600 border border-solid dark:border-none dark:bg-gray-700 text-sm dark:text-slate-300 rounded-2xl hover:opacity-80 transition"
                     >
                         <img 
                             src={temaEscuro ? sunIcon : moonIcon}

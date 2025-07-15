@@ -15,6 +15,18 @@
 </div>
 <br>
 
+## :iphone: Mobile design
+<br>
+<div align = "center">
+<img src = "https://github.com/gleicekelly13/Conversor-moedas/blob/main/src/assets/conversor_moedas_mobile_light.png" width = "300" />
+</div>
+<br>
+
+<div align = "center">
+<img src = "https://github.com/gleicekelly13/Conversor-moedas/blob/main/src/assets/conversor_moedas_mobile_dark.png" width = "300" />
+</div>
+<br>
+
 <h2 align="center"> :computer: Tecnologias utilizadas </h2>
 <ul>
   <li>HTML5</li>

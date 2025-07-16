@@ -32,6 +32,16 @@
 <h4>:white_check_mark: Mobile - FINALIZADO :white_check_mark: </h4>
 <br>
 
+<h2 align="center">:hammer: Funcionalidades do projeto </h2>
+<ul>
+  <li>Conversão de moedas em tempo real: Permite converter valores entre diferentes moedas como Real (BRL), Dólar (USD), Euro (EUR), Libra (GBP) e Peso Argentino (ARS);</li>
+  <li>Interface responsiva e moderna: Layout adaptado para diversos tamanhos de tela, com foco em dispositivos móveis;</li>
+  <li>Modo Claro e Escuro: O usuário pode alternar entre os temas com um clique, garantindo melhor experiência visual em diferentes ambientes;</li>
+  <li>Feedback visual ao usuário: Realce nos campos de entrada ao focar, animações suaves e destaque no resultado da conversão;</li>
+  <li>Design com Tailwind CSS: Utilização de utilitários do Tailwind para estilização ágil e organizada, com suporte a temas e personalizações.</li>
+</ul>
+<br>
+
 <h2 align="center"> :computer: Tecnologias utilizadas </h2>
 <ul>
   <li>HTML5</li>
@@ -39,6 +49,7 @@
   <li>JavaScript</li>
   <li>React JS</li>
 </ul>
+<br>
 
 # :sunglasses: Autora
 

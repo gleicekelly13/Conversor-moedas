@@ -3,6 +3,35 @@
 <p>Aplicativo simples e moderno de conversão de moedas, desenvolvido com React e estilizado com Tailwind CSS. Permite ao usuário inserir um valor, selecionar a moeda de origem e destino, e visualizar instantaneamente o valor convertido utilizando a API da AwesomeAPI para obter as taxas de câmbio em tempo real.</p>
 <br>
 
+## :desktop_computer: Desktop design
+<br>
+<div align = "center">
+<img src = "https://github.com/gleicekelly13/Conversor-moedas/blob/main/src/assets/conversor_moedas_desktop_light.png" width = "500" />
+</div>
+<br>
+
+<div align = "center">
+<img src = "https://github.com/gleicekelly13/Conversor-moedas/blob/main/src/assets/conversor_moedas_desktop_dark.png" width = "500" />
+</div>
+<br>
+
+## :iphone: Mobile design
+<br>
+<div align = "center">
+<img src = "https://github.com/gleicekelly13/Conversor-moedas/blob/main/src/assets/conversor_moedas_mobile_light.png" width = "300" />
+</div>
+<br>
+
+<div align = "center">
+<img src = "https://github.com/gleicekelly13/Conversor-moedas/blob/main/src/assets/conversor_moedas_mobile_dark.png" width = "300" />
+</div>
+<br>
+
+<h2 align="center">:hourglass: Status do projeto </h2>
+<h4>:white_check_mark: Desktop - FINALIZADO :white_check_mark: </h4>
+<h4>:white_check_mark: Mobile - FINALIZADO :white_check_mark: </h4>
+<br>
+
 <h2 align="center"> :computer: Tecnologias utilizadas </h2>
 <ul>
   <li>HTML5</li>

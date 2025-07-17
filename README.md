@@ -42,6 +42,18 @@
 </ul>
 <br>
 
+<h2 align="center"> :dart: Objetivo de aprendizado/O que aprendi </h2>
+<p>Este projeto teve como principal objetivo praticar e consolidar conhecimentos em desenvolvimento frontend com React e Tailwind CSS. Ao longo da construção do conversor de moedas, pude aprender e aplicar diversos conceitos importantes, como:</p>
+<ul>
+  <li>Gerenciamento de estado com React (useState): Utilização de estados para capturar e controlar valores de entrada (input e selects), permitindo atualização reativa da interface;
+</li>
+  <li>Estilização com Tailwind CSS: Aplicação de classes utilitárias para construir layouts modernos e responsivos, incluindo personalização do `tailwind.config.js` com temas, fontes e breakpoints;</li>
+  <li>Criação e implementação de tema escuro (dark mode): Uso da diretiva `dark:` do Tailwind em conjunto com `useState` para alternar dinamicamente entre os temas claro e escuro, aplicando estilos condicionalmente;</li>
+  <li>Design responsivo com abordagem mobile-first: Aprendi como o Tailwind adota o conceito mobile-first e como adaptar o layout para diferentes tamanhos de tela usando breakpoints. E a criação de um breakpoint customizado (`xs`) para dispositivos com largura mínima de 320px;</li>
+  <li>Aprimoramento de acessibilidade e experiência do usuário (UX): Inclusão de feedbacks visuais com efeitos `hover`, `focus` e `transition`, organização semântica e espaçamento adequado entre os elementos.</li>
+</ul>
+<br>
+
 <h2 align="center"> :computer: Tecnologias utilizadas </h2>
 <ul>
   <li>HTML5</li>

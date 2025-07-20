@@ -51,6 +51,7 @@
   <li>Criação e implementação de tema escuro (dark mode): Uso da diretiva `dark:` do Tailwind em conjunto com `useState` para alternar dinamicamente entre os temas claro e escuro, aplicando estilos condicionalmente;</li>
   <li>Design responsivo com abordagem mobile-first: Aprendi como o Tailwind adota o conceito mobile-first e como adaptar o layout para diferentes tamanhos de tela usando breakpoints. E a criação de um breakpoint customizado (`xs`) para dispositivos com largura mínima de 320px;</li>
   <li>Aprimoramento de acessibilidade e experiência do usuário (UX): Inclusão de feedbacks visuais com efeitos `hover`, `focus` e `transition`, organização semântica e espaçamento adequado entre os elementos;</li>
+  <li>Criação de um layout centralizado com flexbox: Estruturação do layout principal com `flex`, `items-center`, `justify-center` e `min-h-screen`, garantindo centralização vertical e horizontal do conteúdo;</li>
   <li>Uso de plugin externo para text-shadow customizado: Instalação e configuração do plugin `tailwindcss-textshadow` para estilização de texto com sombras (efeito neon), principalmente no modo escuro;</li>
   <li>Consumo de API externa (ExchangeRate API): Requisição de dados de câmbio em tempo real utilizando fetch, manipulando respostas assíncronas e atualizando o estado com o valor convertido dinamicamente.</li>
 </ul>

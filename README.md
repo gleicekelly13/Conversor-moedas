@@ -68,6 +68,7 @@
   <li>Tailwind CSS</li>
   <li>JavaScript</li>
   <li>React JS</li>
+  <li>Vite</li>
 </ul>
 <br>
 

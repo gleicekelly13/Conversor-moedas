@@ -55,6 +55,7 @@
   <li>Criação de um layout centralizado com flexbox: Estruturação do layout principal com `flex`, `items-center`, `justify-center` e `min-h-screen`, garantindo centralização vertical e horizontal do conteúdo;</li>
   <li>Uso de plugin externo para text-shadow customizado: Instalação e configuração do plugin `tailwindcss-textshadow` para estilização de texto com sombras (efeito neon), principalmente no modo escuro;</li>
   <li>Consumo de API externa (ExchangeRate API): Requisição de dados de câmbio em tempo real utilizando fetch, manipulando respostas assíncronas e atualizando o estado com o valor convertido dinamicamente;</li>
+  <li>Entendimento de renderização condicional: Exibição dinâmica do resultado da conversão apenas quando o valor for processado, usando operadores ternários;</li>
   <li>Familiaridade com controle de versão e Git revert: Prática com comandos como git revert HEAD para desfazer commits mantendo o histórico limpo e seguro.</li>
 </ul>
 <br>

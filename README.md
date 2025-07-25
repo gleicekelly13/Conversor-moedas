@@ -39,6 +39,7 @@
   <li>Modo Claro e Escuro: O usuário pode alternar entre os temas com um clique, garantindo melhor experiência visual em diferentes ambientes;</li>
   <li>Feedback visual ao usuário: Realce nos campos de entrada ao focar, animações suaves e destaque no resultado da conversão;</li>
   <li>Design com Tailwind CSS: Utilização de utilitários do Tailwind para estilização ágil e organizada, com suporte a temas e personalizações;</li>
+  <li>Interatividade em tempo real: A aplicação responde instantaneamente à entrada do usuário, com atualização do valor convertido logo após o clique, melhorando a experiência de uso;</li>
   <li>Validação de campos de entrada: Garantia de que o valor digitado seja numérico e maior que zero, evitando erros de conversão ou chamadas desnecessárias à API.</li>
 </ul>
 <br>
